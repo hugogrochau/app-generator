@@ -4,7 +4,11 @@
   "description": "Generates a react native aplication from json representation",
   "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "yarn tslint --project tsconfig.json --config tslint.json",
+    "build": "tsc",
+    "clean": "rimraf dist",
+    "start": "ts-node ."
   },
   "repository": {
     "type": "git",
@@ -22,6 +26,7 @@
   },
   "homepage": "https://github.com/hugogrochau/app-generator#readme",
   "devDependencies": {
+    "rimraf": "^2.6.2",
     "ts-jest": "^23.0.1",
     "ts-node": "^7.0.0",
     "tslint": "^5.11.0",
