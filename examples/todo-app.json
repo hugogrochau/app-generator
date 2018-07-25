@@ -1,0 +1,52 @@
+{
+  "name": "TodoApp",
+  "version": "0.0.1",
+  "screens": [
+    {
+      "name": "Welcome",
+      "components": [
+        {
+          "name": "Logo",
+          "styles": {
+            "justifyContent": "center",
+            "alignItems": "center",
+            "marginBottom": 20
+          },
+          "contentType": "image",
+          "content": "todo-logo.png"
+        },
+        {
+          "name": "Title",
+          "styles": {
+            "fontSize": 16,
+            "textAlign": "center"
+          },
+          "contentType": "text",
+          "content": "Welcome to the app!"
+        }
+      ]
+    },
+    {
+      "name": "About",
+      "components": [
+        {
+          "name": "Title",
+          "styles": {
+            "fontSize": 16,
+            "textAlign": "center"
+          },
+          "contentType": "text",
+          "content": "About us"
+        },
+        {
+          "name": "Content",
+          "styles": {
+            "fontSize": 12
+          },
+          "contentType": "text",
+          "content": "We are the first neural network TodoApp implemented completely in the blockchain!"
+        }
+      ]
+    }
+  ]
+}
