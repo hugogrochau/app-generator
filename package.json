@@ -35,6 +35,8 @@
   },
   "dependencies": {
     "@types/chalk": "^2.2.0",
-    "chalk": "^2.4.1"
+    "@types/handlebars": "^4.0.39",
+    "chalk": "^2.4.1",
+    "handlebars": "^4.0.11"
   }
 }
