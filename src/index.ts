@@ -21,7 +21,7 @@ const input = commander.input || commander.args[0]
 const output = commander.output || commander.args[1] || 'dist'
 
 if (!input) {
-  logger.error('Input required')
+  logger.error('Input template is required')
   commander.outputHelp()
   process.exit(1)
 }
