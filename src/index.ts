@@ -1,7 +1,7 @@
 import commander from 'commander'
 
 import { logger } from './logger'
-import { generate } from './generate'
+import { generate } from './generator/generate'
 
 const VERSION = '0.0.1'
 commander.version(VERSION)
