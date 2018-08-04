@@ -3,7 +3,11 @@ import path from 'path'
 
 export const getDirectoryFullPath = (receivedPath: string) => path.join(process.cwd(), receivedPath)
 
-export const createDirectory = (directoryPath: string) => {
+export const createDirectory = (directoryPath: string, force = false) => {
+  if (force) {
+    fs.removeSync(directoryPath)
+  }
+
   if (fs.existsSync(directoryPath)) {
     throw new Error(`Directory ${getDirectoryFullPath(directoryPath)} already exists`)
   }

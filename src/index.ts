@@ -2,6 +2,7 @@ import commander from 'commander'
 
 import { logger } from './logger'
 import { generate } from './generator/generate'
+import { options } from './options'
 
 const VERSION = '0.0.1'
 commander.version(VERSION)
@@ -9,10 +10,14 @@ commander.version(VERSION)
   .option('-i --input <file>', 'Input template')
   .option('-o --output <directory>', 'Destination directory')
   .option('-v --verbose', 'Verbose log')
+  .option('-f --force', 'Force overwrite')
   .parse(process.argv)
 
 if (commander.verbose) {
-  process.env.VERBOSE = 'true'
+  options.verbose = true
+}
+if (commander.force) {
+  options.force = true
 }
 
 logger.debug(`Starting app generator v${VERSION}`)
