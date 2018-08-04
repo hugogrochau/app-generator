@@ -1,5 +1,7 @@
-import { logger } from './logger'
 import commander from 'commander'
+
+import { logger } from './logger'
+import { generate } from './generate'
 
 const VERSION = '0.0.1'
 commander.version(VERSION)
@@ -9,7 +11,6 @@ commander.version(VERSION)
   .option('-v --verbose', 'Verbose log')
   .parse(process.argv)
 
-console.log('commander.verbose', commander.verbose)
 if (commander.verbose) {
   process.env.VERBOSE = 'true'
 }
@@ -25,4 +26,4 @@ if (!input) {
   process.exit(1)
 }
 
-console.log('output', output)
+generate(input, output)
