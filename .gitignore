@@ -1,6 +1,6 @@
 # Build files
-./dist
-./output
+dist
+output
 
 # Logs
 logs
