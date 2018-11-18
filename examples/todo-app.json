@@ -6,23 +6,29 @@
       "name": "Welcome",
       "components": [
         {
-          "name": "Logo",
-          "styles": {
+          "name": "@LAYOUT/BOX",
+          "style": {
             "justifyContent": "center",
             "alignItems": "center",
             "marginBottom": 20
           },
-          "contentType": "image",
-          "content": "todo-logo.png"
-        },
-        {
-          "name": "Title",
-          "styles": {
-            "fontSize": 16,
-            "textAlign": "center"
-          },
-          "contentType": "text",
-          "content": "Welcome to the app!"
+          "children": [
+            {
+              "name": "@UI/IMAGE",
+              "props": {
+                "source": "todo-logo.png"
+              },
+              "children": null
+            },
+            {
+              "name": "@UI/TEXT",
+              "style": {
+                "fontSize": 16,
+                "textAlign": "center"
+              },
+              "children": "Welcome to the app!"
+            }
+          ]
         }
       ]
     },
@@ -30,21 +36,20 @@
       "name": "About",
       "components": [
         {
-          "name": "Title",
-          "styles": {
+          "name": "@UI/TEXT",
+          "style": {
             "fontSize": 16,
-            "textAlign": "center"
+            "textAlign": "center",
+            "marginBottom": 12
           },
-          "contentType": "text",
-          "content": "About us"
+          "children": "About us"
         },
         {
-          "name": "Content",
-          "styles": {
+          "name": "@UI/TEXT",
+          "style": {
             "fontSize": 12
           },
-          "contentType": "text",
-          "content": "We are the first neural network TodoApp implemented completely in the blockchain!"
+          "children": "We are the first neural network TodoApp implemented completely in the blockchain!"
         }
       ]
     }
