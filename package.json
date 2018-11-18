@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "yarn tslint --project tsconfig.json --config tslint.json",
     "build": "tsc",
-    "clean": "rimraf dist",
+    "clean": "rimraf dist output",
     "start": "ts-node ."
   },
   "repository": {
@@ -38,6 +38,7 @@
   "dependencies": {
     "@types/chalk": "^2.2.0",
     "@types/handlebars": "^4.0.39",
+    "@types/react-native": "^0.57.10",
     "chalk": "^2.4.1",
     "commander": "^2.17.0",
     "fs-extra": "^7.0.0",

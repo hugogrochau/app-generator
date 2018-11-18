@@ -3,12 +3,13 @@ import commander from 'commander'
 import { logger } from './logger'
 import { generate } from './generator/generate'
 import { options } from './options'
+import { compileTemplates } from './templates'
 
 const VERSION = '0.0.1'
 commander.version(VERSION)
   .arguments('<input> [output]')
-  .option('-i --input <file>', 'Input template')
-  .option('-o --output <directory>', 'Destination directory')
+  .option('--input <file>', 'Input template')
+  .option('--output <directory>', 'Destination directory')
   .option('-v --verbose', 'Verbose log')
   .option('-f --force', 'Force overwrite')
   .parse(process.argv)
@@ -16,6 +17,7 @@ commander.version(VERSION)
 if (commander.verbose) {
   options.verbose = true
 }
+
 if (commander.force) {
   options.force = true
 }
@@ -30,5 +32,7 @@ if (!input) {
   commander.outputHelp()
   process.exit(1)
 }
+
+compileTemplates()
 
 generate(input, output)
