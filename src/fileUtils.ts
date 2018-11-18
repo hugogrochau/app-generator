@@ -46,3 +46,7 @@ export const read = (filePath: string) => {
 export const write = (filePath: string, content: string) => {
   fs.writeFileSync(filePath, content)
 }
+
+export const getDirectoryFileNames = (directoryPath: string) => {
+  return fs.readdirSync(directoryPath)
+}

@@ -1,12 +1,17 @@
 import handlebars from 'handlebars'
 import path from 'path'
-import { read } from './fileUtils'
+import { read, getDirectoryFileNames } from './fileUtils'
 
 const templates: { [key: string]: handlebars.TemplateDelegate } = {}
 
 export const compileTemplates = () => {
   const templatesPath = path.join('assets', 'templates')
-  compileTemplate(templatesPath, 'app.json')
+  const templateFileNames = getDirectoryFileNames(templatesPath)
+  templateFileNames.forEach(templateFileName => {
+    const extensionIndex = templateFileName.indexOf('.hbs')
+    const filenameWithoutExtension = templateFileName.substring(0, extensionIndex)
+    compileTemplate(templatesPath, filenameWithoutExtension)
+  })
 }
 
 const compileTemplate = (templatesPath: string, name: string) => {

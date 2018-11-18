@@ -10,7 +10,7 @@ export interface AppDeclaration {
 
 export interface Screen {
   name: string,
-  components: Component[]
+  children: Component[]
 }
 
 export interface Component {

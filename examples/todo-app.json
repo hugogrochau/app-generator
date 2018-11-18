@@ -6,7 +6,7 @@
   "screens": [
     {
       "name": "Welcome",
-      "components": [
+      "children": [
         {
           "name": "@LAYOUT/BOX",
           "style": {
@@ -36,7 +36,7 @@
     },
     {
       "name": "About",
-      "components": [
+      "children": [
         {
           "name": "@UI/TEXT",
           "style": {

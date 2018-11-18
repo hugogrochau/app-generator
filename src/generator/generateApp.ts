@@ -10,6 +10,6 @@ export const generateApp = (appPath: string, appDeclaration: AppDeclaration) => 
   const appJsonFile = executeTemplate('app.json', appJsonData)
   write(path.join(appPath, 'app.json'), appJsonFile)
 
-  const screensPath = path.join(appPath, 'screens')
+  const screensPath = path.join(appPath, 'src', 'screens')
   screens.forEach(screen => generateScreen(screensPath, screen))
 }
