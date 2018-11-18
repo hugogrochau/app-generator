@@ -1,0 +1,14 @@
+import { createStackNavigator } from 'react-navigation'
+
+{{#each screens as |name|}}
+import {{name}} from './screens/{{name}}'
+{{/each}}
+
+
+const Navigator = createStackNavigator({
+{{#each screens as |name|}}
+  {{name}}: { screen: {{name}} }
+{{/each}}
+});
+
+export default Navigator;
