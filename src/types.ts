@@ -10,21 +10,21 @@ export interface AppDeclaration {
 
 export interface Screen {
   name: string,
-  children: Component[]
+  children: Element[]
 }
 
-export interface Component {
+export interface Element {
   name: ComponentName,
-  children: Component[] | string | null,
-  props: ComponentProps,
+  children: Element[] | string | null,
+  props: ElementProps,
   style: StyleSheet.NamedStyles<any>[]
 }
 
-export interface ComponentProps {
+export interface ElementProps {
   [key: string]: any
 }
 
-enum ComponentName {
+export enum ComponentName {
   uiText = '@UI/TEXT',
   uiButton = '@UI/BUTTON',
   uiTextInput = '@UI/TEXT_INPUT',

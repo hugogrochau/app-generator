@@ -14,6 +14,9 @@
             "alignItems": "center",
             "marginBottom": 20
           },
+          "props": {
+            "foo": "bar"
+          },
           "children": [
             {
               "name": "@UI/IMAGE",
