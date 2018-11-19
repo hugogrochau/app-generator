@@ -1,8 +1,9 @@
 {
   "name": "TodoApp",
   "version": "0.0.1",
-  "slug": "todoapp",
+  "slug": "todo-app",
   "description": "Todo App",
+  "author": "anonymous",
   "screens": [
     {
       "name": "Welcome",

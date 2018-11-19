@@ -5,6 +5,7 @@ export interface AppDeclaration {
   slug: string,
   version: string,
   description: string,
+  author: string,
   screens: Screen[]
 }
 
