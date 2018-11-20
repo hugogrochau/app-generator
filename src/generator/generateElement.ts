@@ -9,8 +9,7 @@ export const elementToComponentMap = {
   [ComponentName.uiButton]: 'Button',
   [ComponentName.uiTextInput]: 'TextInput',
   [ComponentName.uiTextArea]: 'TextArea',
-  [ComponentName.navigationLink]: 'NavigationLink',
-  [ComponentName.navigationButton]: 'NavigationButton'
+  [ComponentName.navigationLink]: 'Link'
 }
 
 export const generateElement = (element: Element, depth: number): string => {

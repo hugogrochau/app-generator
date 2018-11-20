@@ -32,6 +32,5 @@ export enum ComponentName {
   uiImage = '@UI/IMAGE',
   uiTextArea = '@UI/TEXT_AREA',
   layoutBox = '@LAYOUT/BOX',
-  navigationLink = '@NAVIGATION/LINK',
-  navigationButton = '@NAVIGATION/BUTTON'
+  navigationLink = '@NAVIGATION/LINK'
 }
