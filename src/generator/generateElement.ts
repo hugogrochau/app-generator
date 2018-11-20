@@ -6,11 +6,11 @@ export const elementToComponentMap = {
   [ComponentName.uiImage]: 'Image',
   [ComponentName.layoutBox]: 'Box',
 
-  [ComponentName.uiButton]: 'Undefined',
-  [ComponentName.uiTextInput]: 'Undefined',
-  [ComponentName.uiTextArea]: 'Undefined',
-  [ComponentName.navigationLink]: 'Undefined',
-  [ComponentName.navigationButton]: 'Undefined'
+  [ComponentName.uiButton]: 'Button',
+  [ComponentName.uiTextInput]: 'TextInput',
+  [ComponentName.uiTextArea]: 'TextArea',
+  [ComponentName.navigationLink]: 'NavigationLink',
+  [ComponentName.navigationButton]: 'NavigationButton'
 }
 
 export const generateElement = (element: Element, depth: number): string => {
