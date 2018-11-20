@@ -8,7 +8,7 @@ import { generateElement, elementToComponentMap } from './generateElement'
 export const generateScreen = (screensPath: string, screen: Screen) => {
   const { name, children } = screen
 
-  const childrenToRender = children.map(generateElement).join('\n')
+  const childrenToRender = children.map(c => generateElement(c, 2)).join('\n')
   const componentNames = getUsedComponents(children).map(c => elementToComponentMap[c])
 
   const screenFile = executeTemplate('component.js', { name, children: childrenToRender, components: componentNames })
