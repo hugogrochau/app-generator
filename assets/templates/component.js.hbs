@@ -1,5 +1,10 @@
 import { View } from 'react-native'
 
+{{#each components as |component|}}
+import {{component}} from '../components/{{component}}'
+{{/each}}
+
+
 const {{name}} = () => (
   <View>
     {{{children}}}

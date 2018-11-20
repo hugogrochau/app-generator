@@ -1,7 +1,7 @@
 import { Element, ComponentName } from '../types'
 import { executeTemplate } from '../templates'
 
-const elementToComponentMap = {
+export const elementToComponentMap = {
   [ComponentName.uiText]: 'Text',
   [ComponentName.uiImage]: 'Image',
   [ComponentName.layoutBox]: 'Box',
