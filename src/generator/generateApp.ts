@@ -10,6 +10,14 @@ export const generateApp = (appPath: string, appDeclaration: AppDeclaration) => 
 
   const screensPath = path.join(appPath, 'src', 'screens')
   appDeclaration.screens.forEach(screen => generateScreen(screensPath, screen))
+  const screenNames = appDeclaration.screens.map(s => s.name)
+  generateNavigator(appPath, screenNames)
+}
+
+const generateNavigator = (appPath: string, screenNames: string[]) => {
+  const navigatorFile = executeTemplate('Navigator.js', { screens: screenNames })
+  write(path.join(appPath, 'src', 'Navigator.js'), navigatorFile)
+
 }
 
 const generateAppJson = (appPath: string, appDeclaration: AppDeclaration) => {
