@@ -1,5 +1,5 @@
 import Expo from 'expo'
 
-import App from './src/App'
+import App from './src/Navigator'
 
 Expo.registerRootComponent(App)

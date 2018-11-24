@@ -22,7 +22,7 @@
             {
               "name": "@UI/IMAGE",
               "props": {
-                "source": "todo-logo.png"
+                "source": { "uri": "todo-logo.png" }
               },
               "children": null
             },

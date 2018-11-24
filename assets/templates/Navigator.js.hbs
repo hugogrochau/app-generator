@@ -1,10 +1,8 @@
-import React from 'react'
 import { createStackNavigator, createAppContainer } from 'react-navigation'
 
 {{#each screens as |name|}}
 import {{name}} from './screens/{{name}}'
 {{/each}}
-
 
 const Navigator = createStackNavigator({
 {{#each screens as |name|}}
@@ -12,4 +10,4 @@ const Navigator = createStackNavigator({
 {{/each}}
 });
 
-export default createAppContainer(Navigator);
+export default createAppContainer(Navigator)
