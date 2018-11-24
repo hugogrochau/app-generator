@@ -1,6 +1,6 @@
-import React from 'react';
-import { StatusBar, View } from 'react-native';
-import Navigator from './Navigator';
+import React from 'react'
+import { StatusBar, View } from 'react-native'
+import Navigator from './Navigator'
 
 export default class App extends React.PureComponent {
   render() {

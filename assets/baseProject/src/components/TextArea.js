@@ -1,8 +1,8 @@
 import React from 'react'
-import { View } from 'react-native'
+import { TextArea as RNTextArea } from 'react-native'
 
 const TextArea = (props) => (
-  <View {...props} />
+  <RNTextArea {...props} />
 )
 
 export default TextArea

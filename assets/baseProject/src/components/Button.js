@@ -1,8 +1,8 @@
 import React from 'react'
-import { View } from 'react-native'
+import { Button as RNButton } from 'react-native'
 
 const Button = (props) => (
-  <View {...props} />
+  <RNButton {...props} />
 )
 
 export default Button

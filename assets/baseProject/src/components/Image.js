@@ -1,8 +1,8 @@
 import React from 'react'
-import { View } from 'react-native'
+import { Image as RNImage } from 'react-native'
 
 const Image = (props) => (
-  <View {...props} />
+  <RNImage {...props} />
 )
 
 export default Image

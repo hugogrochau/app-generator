@@ -1,8 +1,8 @@
 import React from 'react'
-import { View } from 'react-native'
+import { Button } from 'react-native'
 
 const NavigationLink = (props) => (
-  <View {...props} />
+  <Button {...props} />
 )
 
 export default NavigationLink
