@@ -1,9 +1,8 @@
+import React from 'react'
 import { View } from 'react-native'
 
-const Text = ({ children }) => (
-  <View>
-    {...children}
-  </View>
+const Text = (props) => (
+  <View {...props} />
 )
 
 export default Text

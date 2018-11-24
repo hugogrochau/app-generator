@@ -1,9 +1,8 @@
+import React from 'react'
 import { View } from 'react-native'
 
-const NavigationLink = ({ children }) => (
-  <View>
-    {...children}
-  </View>
+const NavigationLink = (props) => (
+  <View {...props} />
 )
 
 export default NavigationLink

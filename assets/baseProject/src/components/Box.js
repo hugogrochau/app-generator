@@ -1,9 +1,8 @@
+import React from 'react'
 import { View } from 'react-native'
 
-const Box = ({ children }) => (
-  <View>
-    {...children}
-  </View>
+const Box = (props) => (
+  <View {...props} />
 )
 
 export default Box

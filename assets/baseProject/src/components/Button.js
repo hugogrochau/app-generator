@@ -1,9 +1,8 @@
+import React from 'react'
 import { View } from 'react-native'
 
-const Button = ({ children }) => (
-  <View>
-    {...children}
-  </View>
+const Button = (props) => (
+  <View {...props} />
 )
 
 export default Button
