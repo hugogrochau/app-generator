@@ -1,9 +1,9 @@
 {{indentation}}<{{name}}
 
 {{~#if style}}
- style={ {
-{{~#each style as |value key|~}}{{key}}: {{value~}},{{~/each~}}
-} }
+ style={
+  {{~{style}~}}
+ }
 {{~/if}}
 
 {{~#if props}}{{#each props as |value key|}} {{key}}={'{{~value~}}'}
