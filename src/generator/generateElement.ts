@@ -18,7 +18,7 @@ export const generateElement = (element: Element, depth: number): string => {
   const formattedStyle = JSON.stringify(style)
 
   if (!children) {
-    return executeTemplate('leafElement', { name: componentName, props, style: formattedStyle, indentation })
+    return executeTemplate('elementWithoutChildren', { name: componentName, props, style: formattedStyle, indentation })
   }
 
   if (typeof children === 'string') {
