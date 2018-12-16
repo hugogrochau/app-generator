@@ -1,6 +1,7 @@
 import R from 'ramda'
 import { Element, ComponentName, ElementProps } from '../types'
 import { executeTemplate } from '../templates'
+import { StyleSheet } from 'react-native'
 
 export const elementToComponentMap = {
   [ComponentName.layoutBox]: 'Box',
@@ -17,16 +18,29 @@ const stringifyProps = (props: ElementProps): ElementProps => {
     return {}
   }
 
-  const stringifiedProps = R.map<ElementProps, ElementProps>(JSON.stringify, props)
+  const filteredProps = R.filter<ElementProps>(p => Boolean(p), props)
+  const stringifiedProps = R.map<ElementProps, ElementProps>(JSON.stringify, filteredProps)
+
   return stringifiedProps
 }
 
+const stringifyStyle = (style: StyleSheet.NamedStyles<any>) => {
+  if (!style) {
+    return {}
+  }
+
+  const filteredStyle = R.filter(s => Boolean(s), style)
+  const stringifiedStyles = JSON.stringify(filteredStyle)
+
+  return stringifiedStyles
+}
+
 export const generateElement = (element: Element, depth: number): string => {
-  const { name, props: receivedProps, style, children, navigateTo } = element
+  const { name, props: receivedProps, style: receivedStyle, children, navigateTo } = element
   const componentName = elementToComponentMap[name]
   const indentation = ''.padStart(depth * 2)
-  const formattedStyle = JSON.stringify(style)
 
+  const style = stringifyStyle(receivedStyle)
   const props = stringifyProps(receivedProps)
 
   if (name === ComponentName.uiButton && navigateTo) {
@@ -34,13 +48,13 @@ export const generateElement = (element: Element, depth: number): string => {
   }
 
   if (!children) {
-    return executeTemplate('elementWithoutChildren', { name: componentName, props, style: formattedStyle, indentation })
+    return executeTemplate('elementWithoutChildren', { name: componentName, props, style, indentation })
   }
 
   if (typeof children === 'string') {
-    return executeTemplate('elementWithChildren', { name: componentName, props, style: formattedStyle, children: `${indentation.padStart(2)}${children}`, indentation })
+    return executeTemplate('elementWithChildren', { name: componentName, props, style, children: `${indentation.padStart(2)}${children}`, indentation })
   }
 
   const generatedChildren = children.map(c => generateElement(c, depth + 1)).join('\n')
-  return executeTemplate('elementWithChildren', { name: componentName, props, style: formattedStyle, children: generatedChildren, indentation })
+  return executeTemplate('elementWithChildren', { name: componentName, props, style, children: generatedChildren, indentation })
 }

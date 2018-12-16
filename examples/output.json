@@ -1,0 +1,188 @@
+{
+  "name": "APP",
+  "createdAt": "2018-12-09T04:07:38.638Z",
+  "version": "0.0.1",
+  "slug": "app",
+  "description": "App",
+  "author": "anonymous",
+  "screens": [
+    {
+      "name": "Test",
+      "children": [
+        {
+          "id": "5644c0cf-f691-4bbb-81f4-0a5021c5def4",
+          "name": "@LAYOUT/BOX",
+          "navigateTo": null,
+          "children": [
+            {
+              "id": "42200304-7a70-41e6-9ae5-94f33a194181",
+              "name": "@UI/TEXT",
+              "navigateTo": null,
+              "children": null,
+              "props": {
+                "text": "APP TEST"
+              },
+              "style": {
+                "display": "flex",
+                "justifyContent": "center",
+                "alignItems": "center",
+                "fontSize": 28,
+                "color": "blue"
+              }
+            }
+          ],
+          "props": {},
+          "style": {
+            "height": "",
+            "paddingLeft": 16,
+            "paddingTop": 16,
+            "paddingBottom": 16,
+            "paddingRight": 16,
+            "backgroundColor": "red"
+          }
+        },
+        {
+          "id": "4a954b88-45e2-4f56-a69e-91df3ddb228f",
+          "name": "@LAYOUT/BOX",
+          "navigateTo": null,
+          "children": [
+            {
+              "id": "2151ebc5-3184-43bb-938e-d696486a8082",
+              "name": "@LAYOUT/BOX",
+              "navigateTo": null,
+              "children": [
+                {
+                  "id": "fa9434f8-5eed-4b5f-9f76-7b8cf128d59d",
+                  "name": "@UI/TEXT",
+                  "navigateTo": null,
+                  "children": null,
+                  "props": {
+                    "text": "HUGO"
+                  },
+                  "style": {
+                    "display": "flex",
+                    "fontSize": 20
+                  }
+                }
+              ],
+              "props": {},
+              "style": {
+                "height": "",
+                "display": "flex",
+                "flexGrow": 0.333333333,
+                "alignItems": "center",
+                "justifyContent": "center",
+                "paddingLeft": "",
+                "paddingTop": 16,
+                "paddingBottom": 16,
+                "backgroundColor": "blue"
+              }
+            },
+            {
+              "id": "198e6ba3-5d8d-4cb5-914f-3364059a1bbf",
+              "name": "@LAYOUT/BOX",
+              "navigateTo": null,
+              "children": [
+                {
+                  "id": "b9960d8b-21a1-4951-802a-d6aecb8c0844",
+                  "name": "@UI/TEXT",
+                  "navigateTo": null,
+                  "children": null,
+                  "props": {
+                    "text": "O MEU"
+                  },
+                  "style": {
+                    "display": "flex",
+                    "fontSize": 20
+                  }
+                }
+              ],
+              "props": {},
+              "style": {
+                "height": "",
+                "paddingTop": 16,
+                "paddingBottom": 16,
+                "display": "flex",
+                "flexGrow": 0.333333333,
+                "alignItems": "center",
+                "justifyContent": "center",
+                "backgroundColor": "green"
+              }
+            },
+            {
+              "id": "fe5b8189-7aef-4995-9e1c-e4a3346ab3eb",
+              "name": "@LAYOUT/BOX",
+              "navigateTo": null,
+              "children": [
+                {
+                  "id": "0f8cb150-65a3-415a-a094-2ab678f9b5ba",
+                  "name": "@UI/TEXT",
+                  "navigateTo": null,
+                  "children": null,
+                  "props": {
+                    "text": "MELHOR"
+                  },
+                  "style": {
+                    "display": "flex",
+                    "fontSize": 20
+                  }
+                }
+              ],
+              "props": {},
+              "style": {
+                "height": "",
+                "display": "flex",
+                "flexGrow": 0.3333,
+                "alignItems": "center",
+                "justifyContent": "center",
+                "paddingTop": 16,
+                "paddingBottom": 16,
+                "backgroundColor": "yellow"
+              }
+            }
+          ],
+          "props": {},
+          "style": {
+            "height": "",
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center",
+            "justifyContent": ""
+          }
+        },
+        {
+          "id": "6b682c48-0ccf-4b74-909c-de0d5e88ceca",
+          "name": "@LAYOUT/BOX",
+          "navigateTo": null,
+          "children": [
+            {
+              "id": "6e645b53-6c54-4c62-9d6f-dfcfd7872148",
+              "name": "@UI/TEXT",
+              "navigateTo": null,
+              "children": null,
+              "props": {
+                "text": "AMIGO"
+              },
+              "style": {
+                "display": "flex",
+                "justifyContent": "center",
+                "alignItems": "center",
+                "fontSize": 20,
+                "color": "red"
+              }
+            }
+          ],
+          "props": {},
+          "style": {
+            "height": "",
+            "marginTop": 200,
+            "paddingRight": "",
+            "paddingBottom": 16,
+            "paddingTop": 16,
+            "backgroundColor": "grey"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -19,7 +19,7 @@ export interface Element {
   children: Element[] | string | null,
   props: ElementProps,
   navigateTo: string,
-  style: StyleSheet.NamedStyles<any>[]
+  style: StyleSheet.NamedStyles<any>
 }
 
 export interface ElementProps {
