@@ -6,7 +6,9 @@
  }
 {{~/if}}
 
-{{~#if props}}{{#each props as |value key|}} {{key}}={'{{~value~}}'}
+{{~#if props}}{{#each props as |value key|}} {{key}}={
+  {{~{value}~}}
+}
 {{~/each}}{{/if~}}
 >
 {{{children}}}

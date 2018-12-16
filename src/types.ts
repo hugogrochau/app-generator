@@ -18,6 +18,7 @@ export interface Element {
   name: ComponentName,
   children: Element[] | string | null,
   props: ElementProps,
+  navigateTo: string,
   style: StyleSheet.NamedStyles<any>[]
 }
 

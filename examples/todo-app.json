@@ -33,6 +33,11 @@
                 "textAlign": "center"
               },
               "children": "Welcome to the app!"
+            },
+            {
+              "name": "@UI/BUTTON",
+              "children": "Welcome to the app!",
+              "navigateTo": "foo"
             }
           ]
         }

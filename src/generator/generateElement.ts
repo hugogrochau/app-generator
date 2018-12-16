@@ -1,4 +1,5 @@
-import { Element, ComponentName } from '../types'
+import R from 'ramda'
+import { Element, ComponentName, ElementProps } from '../types'
 import { executeTemplate } from '../templates'
 
 export const elementToComponentMap = {
@@ -11,18 +12,33 @@ export const elementToComponentMap = {
   [ComponentName.navigationLink]: 'Link'
 }
 
+const stringifyProps = (props: ElementProps): ElementProps => {
+  if (!props) {
+    return {}
+  }
+
+  const stringifiedProps = R.map<ElementProps, ElementProps>(JSON.stringify, props)
+  return stringifiedProps
+}
+
 export const generateElement = (element: Element, depth: number): string => {
-  const { name, props, style, children } = element
+  const { name, props: receivedProps, style, children, navigateTo } = element
   const componentName = elementToComponentMap[name]
   const indentation = ''.padStart(depth * 2)
   const formattedStyle = JSON.stringify(style)
+
+  const props = stringifyProps(receivedProps)
+
+  if (name === ComponentName.uiButton && navigateTo) {
+    props.onPress = `() => { this.props.navigation.navigate('${navigateTo}') }`
+  }
 
   if (!children) {
     return executeTemplate('elementWithoutChildren', { name: componentName, props, style: formattedStyle, indentation })
   }
 
   if (typeof children === 'string') {
-    return executeTemplate('elementWithChildren', { name: componentName, props, style: formattedStyle, children: `  ${indentation}${children}`, indentation })
+    return executeTemplate('elementWithChildren', { name: componentName, props, style: formattedStyle, children: `${indentation.padStart(2)}${children}`, indentation })
   }
 
   const generatedChildren = children.map(c => generateElement(c, depth + 1)).join('\n')
