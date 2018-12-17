@@ -1,0 +1,254 @@
+{
+  "name": "Teste",
+  "version": "0.0.1",
+  "author": "Hugo",
+  "slug": "AppDoHugo",
+  "description": "Esse é um aplicativo legal",
+  "createdAt": "2018-12-17T16:08:39.197Z",
+  "screens": [
+    {
+      "name": "Test",
+      "children": [
+        {
+          "id": "85e1f6c9-9101-489b-8090-1b1b6d2a7070",
+          "name": "@LAYOUT/BOX",
+          "navigateTo": null,
+          "children": [
+            {
+              "id": "e4f74a44-bc3c-4d8e-a528-697505f52cd7",
+              "name": "@LAYOUT/BOX",
+              "navigateTo": null,
+              "children": [
+                {
+                  "id": "1739e5d3-14e7-4b4c-82d7-1baef97383d2",
+                  "name": "@UI/TEXT",
+                  "navigateTo": null,
+                  "children": null,
+                  "props": {
+                    "text": "Hugo"
+                  },
+                  "style": {
+                    "display": "flex"
+                  }
+                }
+              ],
+              "props": {},
+              "style": {
+                "height": 20,
+                "flexBasis": "0.333333333",
+                "flexGrow": "1"
+              }
+            },
+            {
+              "id": "c4e31dbd-786c-4ba3-8984-1a866ea86adb",
+              "name": "@LAYOUT/BOX",
+              "navigateTo": null,
+              "children": [
+                {
+                  "id": "cb5058d3-eedd-41e6-a801-7fa8c7560ac7",
+                  "name": "@UI/TEXT",
+                  "navigateTo": null,
+                  "children": null,
+                  "props": {
+                    "text": "É um"
+                  },
+                  "style": {
+                    "display": "flex"
+                  }
+                }
+              ],
+              "props": {},
+              "style": {
+                "height": 20,
+                "flexGrow": "1",
+                "flexBasis": "0.333333333"
+              }
+            },
+            {
+              "id": "7e98435b-dae7-4da6-881f-c27e9b6c7aa1",
+              "name": "@LAYOUT/BOX",
+              "navigateTo": null,
+              "children": [
+                {
+                  "id": "8385fcfe-abf4-4a28-9147-1b62e176e507",
+                  "name": "@UI/TEXT",
+                  "navigateTo": null,
+                  "children": null,
+                  "props": {
+                    "text": "Cara legal"
+                  },
+                  "style": {
+                    "display": "flex"
+                  }
+                }
+              ],
+              "props": {},
+              "style": {
+                "height": 20,
+                "flexBasis": "0.333333333",
+                "flexGrow": "1"
+              }
+            }
+          ],
+          "props": {},
+          "style": {
+            "height": 20,
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center"
+          }
+        },
+        {
+          "id": "ccf92d14-c2c4-4dd4-a2ac-4a1dffd91a5f",
+          "name": "@LAYOUT/BOX",
+          "navigateTo": null,
+          "children": [
+            {
+              "id": "4c7e0637-06ea-4388-b787-a111ac8fec26",
+              "name": "@LAYOUT/BOX",
+              "navigateTo": null,
+              "children": null,
+              "props": {},
+              "style": {
+                "height": 20,
+                "flexBasis": "0.333333333",
+                "flexGrow": "1"
+              }
+            },
+            {
+              "id": "02f8d1a9-1b88-40d7-9e2c-693469731c9a",
+              "name": "@LAYOUT/BOX",
+              "navigateTo": null,
+              "children": null,
+              "props": {},
+              "style": {
+                "height": 20,
+                "flexGrow": "1",
+                "flexBasis": "0.333333333"
+              }
+            },
+            {
+              "id": "c40bb23e-f981-4714-9a18-38225e0571f7",
+              "name": "@LAYOUT/BOX",
+              "navigateTo": null,
+              "children": null,
+              "props": {},
+              "style": {
+                "height": 20,
+                "flexBasis": "0.333333333",
+                "flexGrow": "1"
+              }
+            }
+          ],
+          "props": {},
+          "style": {
+            "height": 20,
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center"
+          }
+        },
+        {
+          "id": "5fd01ee6-4397-4b35-8655-7f941e434ecd",
+          "name": "@LAYOUT/BOX",
+          "navigateTo": null,
+          "children": [
+            {
+              "id": "e3d0eadc-4a62-45e5-a387-93e7cb09d678",
+              "name": "@LAYOUT/BOX",
+              "navigateTo": null,
+              "children": null,
+              "props": {},
+              "style": {
+                "height": 20,
+                "flexBasis": "0.333333333",
+                "flexGrow": "1"
+              }
+            },
+            {
+              "id": "d220b4b7-1694-475e-b15c-c79ca4860a51",
+              "name": "@LAYOUT/BOX",
+              "navigateTo": null,
+              "children": null,
+              "props": {},
+              "style": {
+                "height": 20,
+                "flexGrow": "1",
+                "flexBasis": "0.333333333"
+              }
+            },
+            {
+              "id": "bf51aec6-eb3b-4674-8a1b-bd88a4d19a10",
+              "name": "@LAYOUT/BOX",
+              "navigateTo": null,
+              "children": null,
+              "props": {},
+              "style": {
+                "height": 20,
+                "flexBasis": "0.333333333",
+                "flexGrow": "1"
+              }
+            }
+          ],
+          "props": {},
+          "style": {
+            "height": 20,
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center"
+          }
+        },
+        {
+          "id": "f6a2a1f0-bdab-4862-95f2-7f4966baecf8",
+          "name": "@LAYOUT/BOX",
+          "navigateTo": null,
+          "children": [
+            {
+              "id": "ef38bbf0-bcf6-436f-a95c-a1104461f561",
+              "name": "@LAYOUT/BOX",
+              "navigateTo": null,
+              "children": null,
+              "props": {},
+              "style": {
+                "height": 20,
+                "flexBasis": "0.333333333",
+                "flexGrow": "1"
+              }
+            },
+            {
+              "id": "e77b88f5-585b-416e-bff7-abfedb002500",
+              "name": "@LAYOUT/BOX",
+              "navigateTo": null,
+              "children": null,
+              "props": {},
+              "style": {
+                "height": 20,
+                "flexGrow": "1",
+                "flexBasis": "0.333333333"
+              }
+            },
+            {
+              "id": "60708570-250b-4cfc-8136-6cbf148b80c4",
+              "name": "@LAYOUT/BOX",
+              "navigateTo": null,
+              "children": null,
+              "props": {},
+              "style": {
+                "height": 20,
+                "flexBasis": "0.333333333",
+                "flexGrow": "1"
+              }
+            }
+          ],
+          "props": {},
+          "style": {
+            "height": 20,
+            "display": "flex",
+            "flexDirection": "row",
+            "alignItems": "center"
+          }
+        }
+      ]
+    }
+  ]
+}

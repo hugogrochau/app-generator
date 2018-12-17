@@ -16,7 +16,7 @@ export interface Screen {
 
 export interface Element {
   name: ComponentName,
-  children: Element[] | string | null,
+  children: Element[] | null,
   props: ElementProps,
   navigateTo: string,
   style: StyleSheet.NamedStyles<any>
@@ -32,6 +32,5 @@ export enum ComponentName {
   uiTextInput = '@UI/TEXT_INPUT',
   uiImage = '@UI/IMAGE',
   uiTextArea = '@UI/TEXT_AREA',
-  layoutBox = '@LAYOUT/BOX',
-  navigationLink = '@NAVIGATION/LINK'
+  layoutBox = '@LAYOUT/BOX'
 }

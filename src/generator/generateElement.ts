@@ -9,8 +9,7 @@ export const elementToComponentMap = {
   [ComponentName.uiImage]: 'Image',
   [ComponentName.uiButton]: 'Button',
   [ComponentName.uiTextInput]: 'TextInput',
-  [ComponentName.uiTextArea]: 'TextArea',
-  [ComponentName.navigationLink]: 'Link'
+  [ComponentName.uiTextArea]: 'TextArea'
 }
 
 const stringifyProps = (props: ElementProps): ElementProps => {
