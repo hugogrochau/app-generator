@@ -1,0 +1,184 @@
+{
+  "name": "Meu App",
+  "version": "0.0.1",
+  "author": "gugamm",
+  "slug": "guga-app",
+  "description": "An app description",
+  "createdAt": "2018-12-18T21:07:57.729Z",
+  "screens": [
+    {
+      "name": "Test",
+      "children": [
+        {
+          "id": "2d7eb08a-5df4-447d-8555-a6c312be383e",
+          "name": "@LAYOUT/BOX",
+          "navigateTo": null,
+          "children": [
+            {
+              "id": "63cf1acb-b4a3-4ba6-a289-9788a72eb4a9",
+              "name": "@UI/TEXT",
+              "navigateTo": null,
+              "children": null,
+              "props": {
+                "text": "Nosso projeto"
+              },
+              "style": {
+                "display": "flex",
+                "color": "blue"
+              }
+            },
+            {
+              "id": "e337d51d-2e5e-47e7-9d4d-8311d8bfd3c5",
+              "name": "@UI/TEXT_AREA",
+              "navigateTo": null,
+              "children": null,
+              "props": {},
+              "style": {}
+            },
+            {
+              "id": "70181263-8797-4673-ad54-b767efd85c32",
+              "name": "@UI/TEXT_AREA",
+              "navigateTo": null,
+              "children": null,
+              "props": {},
+              "style": {}
+            },
+            {
+              "id": "f7202fe4-83e1-4acb-b1c4-dfe29a579f96",
+              "name": "@UI/TEXT_AREA",
+              "navigateTo": null,
+              "children": null,
+              "props": {},
+              "style": {}
+            },
+            {
+              "id": "d1423c73-ec7a-49c1-b305-b9dfd417ad92",
+              "name": "@UI/TEXT_INPUT",
+              "navigateTo": null,
+              "children": null,
+              "props": {},
+              "style": {}
+            },
+            {
+              "id": "30e041b4-5be9-4212-8895-1d37bb63a811",
+              "name": "@UI/TEXT",
+              "navigateTo": null,
+              "children": null,
+              "props": {
+                "text": "eh muito"
+              },
+              "style": {
+                "display": "flex"
+              }
+            }
+          ],
+          "props": {},
+          "style": {
+            "height": "100px"
+          }
+        },
+        {
+          "id": "f343bfb6-e6a9-4b67-b04d-9e718b696682",
+          "name": "@LAYOUT/BOX",
+          "navigateTo": null,
+          "children": [
+            {
+              "id": "e9489deb-0605-40d8-b205-e7879e7827cf",
+              "name": "@LAYOUT/BOX",
+              "navigateTo": null,
+              "children": [
+                {
+                  "id": "40322176-a906-471c-b8fc-9d7db0938f49",
+                  "name": "@UI/BUTTON",
+                  "navigateTo": null,
+                  "children": null,
+                  "props": {
+                    "text": "Click me"
+                  },
+                  "style": {}
+                }
+              ],
+              "props": {},
+              "style": {
+                "height": 20,
+                "flexGrow": 1
+              }
+            },
+            {
+              "id": "3084ada1-e37d-4cab-851a-0f64fcc60f31",
+              "name": "@LAYOUT/BOX",
+              "navigateTo": null,
+              "children": [
+                {
+                  "id": "312a0597-2314-4769-bd08-17a429aabcc3",
+                  "name": "@UI/TEXT",
+                  "navigateTo": null,
+                  "children": null,
+                  "props": {
+                    "text": "legal"
+                  },
+                  "style": {
+                    "display": "flex",
+                    "color": "red"
+                  }
+                }
+              ],
+              "props": {},
+              "style": {
+                "height": 20,
+                "flexGrow": 1
+              }
+            }
+          ],
+          "props": {},
+          "style": {
+            "height": 30,
+            "display": "flex",
+            "flexGrow": 1,
+            "flexBasis": 0
+          }
+        },
+        {
+          "id": "83f5eeec-9d66-4028-bc7e-b361688106c0",
+          "name": "@LAYOUT/BOX",
+          "navigateTo": null,
+          "children": [
+            {
+              "id": "904653b9-c7fc-4104-ab91-a89f1de3d965",
+              "name": "@LAYOUT/BOX",
+              "navigateTo": null,
+              "children": [],
+              "props": {},
+              "style": {
+                "height": 20,
+                "flexGrow": 1
+              }
+            },
+            {
+              "id": "0e1c9dfb-9824-49cc-af83-682cbccf9dae",
+              "name": "@LAYOUT/BOX",
+              "navigateTo": null,
+              "children": [],
+              "props": {},
+              "style": {
+                "height": 20,
+                "flexGrow": 1
+              }
+            }
+          ],
+          "props": {},
+          "style": {
+            "height": 30,
+            "display": "flex",
+            "flexGrow": 1,
+            "flexBasis": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "hello",
+      "children": []
+    }
+  ]
+}
