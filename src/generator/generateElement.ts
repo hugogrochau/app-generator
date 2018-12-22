@@ -50,10 +50,6 @@ export const generateElement = (element: Element, depth: number): string => {
     return executeTemplate('elementWithoutChildren', { name: componentName, props, style, indentation })
   }
 
-  if (typeof children === 'string') {
-    return executeTemplate('elementWithChildren', { name: componentName, props, style, children: `${indentation.padStart(2)}${children}`, indentation })
-  }
-
   const generatedChildren = children.map(c => generateElement(c, depth + 1)).join('\n')
   return executeTemplate('elementWithChildren', { name: componentName, props, style, children: generatedChildren, indentation })
 }

@@ -1,5 +1,7 @@
 import fs from 'fs-extra'
 import path from 'path'
+import decompress from 'decompress'
+import decompressTargz from 'decompress-targz'
 
 export const getDirectoryFullPath = (receivedPath: string) => path.join(process.cwd(), receivedPath)
 
@@ -49,4 +51,16 @@ export const write = (filePath: string, content: string) => {
 
 export const getDirectoryFileNames = (directoryPath: string) => {
   return fs.readdirSync(directoryPath)
+}
+
+export const extractToFolder = async (inputPath: string, outputPath: string) => {
+  await decompress(inputPath, outputPath, {
+    plugins: [
+      decompressTargz()
+    ]
+  })
+}
+
+export const removeFile = (filePath: string) => {
+  fs.removeSync(filePath)
 }

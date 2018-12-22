@@ -1,19 +1,21 @@
 import path from 'path'
 import { logger } from '../logger'
-import { createDirectory, copyDirectoryContent, readAsJson, write } from '../fileUtils'
+import { createDirectory, copyDirectoryContent, readAsJson } from '../fileUtils'
 import { generateApp } from './generateApp'
+import { generateNodeModules } from './generateNodeModules'
 import { AppDeclaration } from '../types'
 
-export const generate = (templatePath: string, outputDirectoryPath: string) => {
-  logger.debug(`Generating from template ${templatePath} into ${outputDirectoryPath}`)
-  try {
-    createDirectory(outputDirectoryPath, true)
-    copyDirectoryContent(path.join('assets', 'baseProject'), outputDirectoryPath)
+export const generate = async (templatePath: string, outputDirectoryPath: string) => {
+  logger.info(`Generating from template ${templatePath} into ${outputDirectoryPath}`)
 
-    const appDeclaration = readAsJson(templatePath) as AppDeclaration
+  logger.info('Copying base project...')
+  createDirectory(outputDirectoryPath, true)
+  copyDirectoryContent(path.join('assets', 'baseProject'), outputDirectoryPath)
 
-    generateApp(outputDirectoryPath, appDeclaration)
-  } catch (err) {
-    logger.error(err.message)
-  }
+  logger.info('Extracting libraries...')
+  await generateNodeModules(outputDirectoryPath)
+
+  logger.info('Generating app...')
+  const appDeclaration = readAsJson(templatePath) as AppDeclaration
+  generateApp(outputDirectoryPath, appDeclaration)
 }

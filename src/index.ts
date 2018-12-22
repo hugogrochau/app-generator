@@ -36,3 +36,5 @@ if (!input) {
 compileTemplates()
 
 generate(input, output)
+  .then(() => logger.info('Finished generating successfully'))
+  .catch((err) => logger.error(`There was an error generating the project ${err.message}`))
