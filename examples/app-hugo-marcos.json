@@ -1,0 +1,121 @@
+{
+  "name": "APP",
+  "version": "1.0.0",
+  "author": "hugo",
+  "slug": "hugo-marcos-app",
+  "description": "An app description",
+  "createdAt": "2018-12-23T15:38:24.901Z",
+  "screens": [
+    {
+      "name": "A",
+      "children": [
+        {
+          "id": "b72831a0-ee9f-4359-b8c8-d927a1dbf64b",
+          "name": "@LAYOUT/BOX",
+          "navigation": {
+            "to": null
+          },
+          "children": [
+            {
+              "id": "67485199-76cc-453c-8d3f-0e1fb4c1b47d",
+              "name": "@UI/IMAGE",
+              "navigation": {
+                "to": null
+              },
+              "children": null,
+              "props": {
+                "source": null,
+                "alt": "image",
+                "src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJIIGqzCD0FOxo1P-_V4VWrFuD0DgLM7DUFj0dpAT2M78hCl_W"
+              },
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "width": 300,
+                "height": 300
+              }
+            },
+            {
+              "id": "5feb6af5-8baf-4427-a2a6-ff90949ceebe",
+              "name": "@UI/BUTTON",
+              "navigation": {
+                "to": "B"
+              },
+              "children": null,
+              "props": {
+                "title": "Ir para B"
+              },
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "height": 40
+              }
+            }
+          ],
+          "props": {},
+          "style": {
+            "height": "auto",
+            "display": "flex",
+            "flexDirection": "row"
+          }
+        }
+      ]
+    },
+    {
+      "name": "B",
+      "children": [
+        {
+          "id": "acda8dff-4fa1-48c3-b2fa-0a713df66e5e",
+          "name": "@LAYOUT/BOX",
+          "navigation": {
+            "to": null
+          },
+          "children": [
+            {
+              "id": "6cefb0c0-5cdc-4480-b731-80348d1b8adc",
+              "name": "@UI/IMAGE",
+              "navigation": {
+                "to": null
+              },
+              "children": null,
+              "props": {
+                "source": null,
+                "alt": "image",
+                "src": "https://media.licdn.com/dms/image/C4D03AQFE0FOjbm7Luw/profile-displayphoto-shrink_200_200/0?e=1550102400&v=beta&t=moZq7FraBMHse-xNyG31dmIDMcWA-oFv_shl96gzgTY"
+              },
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "width": 300,
+                "height": 300
+              }
+            },
+            {
+              "id": "11ebb7db-7cf3-43a4-a412-2bd442ad60af",
+              "name": "@UI/BUTTON",
+              "navigation": {
+                "to": "A"
+              },
+              "children": null,
+              "props": {
+                "title": "Ir para A"
+              },
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "height": 40,
+                "alignItems": "flex-start"
+              }
+            }
+          ],
+          "props": {},
+          "style": {
+            "height": "auto",
+            "display": "flex",
+            "flexDirection": "row"
+          }
+        }
+      ]
+    }
+  ]
+}

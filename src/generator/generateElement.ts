@@ -35,15 +35,15 @@ const stringifyStyle = (style: StyleSheet.NamedStyles<any>) => {
 }
 
 export const generateElement = (element: Element, depth: number): string => {
-  const { name, props: receivedProps, style: receivedStyle, children, navigateTo } = element
+  const { name, props: receivedProps, style: receivedStyle, children, navigation } = element
   const componentName = elementToComponentMap[name]
   const indentation = ''.padStart(depth * 2)
 
   const style = stringifyStyle(receivedStyle)
   const props = stringifyProps(receivedProps)
 
-  if (name === ComponentName.uiButton && navigateTo) {
-    props.onPress = `() => { this.props.navigation.navigate('${navigateTo}') }`
+  if (name === ComponentName.uiButton && navigation && navigation.to) {
+    props.onPress = `() => { props.navigation.navigate('${navigation.to}') }`
   }
 
   if (!children) {
