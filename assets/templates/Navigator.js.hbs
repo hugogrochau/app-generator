@@ -4,10 +4,17 @@ import { createStackNavigator, createAppContainer } from 'react-navigation'
 import {{name}} from './screens/{{name}}'
 {{/each}}
 
+const defaultNavigationOptions = {
+  title: '{{appName}}'
+}
+
 const Navigator = createStackNavigator({
 {{#each screens as |name|}}
   {{name}}: { screen: {{name}} },
 {{/each}}
-});
+}, {
+  defaultNavigationOptions,
+  headerLayoutPreset: 'center'
+})
 
 export default createAppContainer(Navigator)

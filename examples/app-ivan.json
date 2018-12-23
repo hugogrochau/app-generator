@@ -1,0 +1,298 @@
+{
+  "name": "APP",
+  "version": "1.0.0",
+  "author": "gugamm",
+  "slug": "AppExemplo",
+  "description": "app example",
+  "createdAt": "2018-12-23T00:42:48.044Z",
+  "screens": [
+    {
+      "name": "MyApp",
+      "children": [
+        {
+          "id": "d2474408-df71-40d4-98a3-8c9f8850e9e0",
+          "name": "@LAYOUT/BOX",
+          "navigation": {
+            "to": null
+          },
+          "children": [
+            {
+              "id": "4f21dd57-8f5c-46e7-8187-5d667a670e79",
+              "name": "@UI/TEXT",
+              "navigation": {
+                "to": null
+              },
+              "children": null,
+              "props": {
+                "text": "App Name"
+              },
+              "style": {
+                "display": "flex",
+                "fontSize": 20,
+                "fontWeight": "bold"
+              }
+            },
+            {
+              "id": "3aca03e3-a108-424f-9ba3-761fdef64613",
+              "name": "@UI/TEXT",
+              "navigation": {
+                "to": null
+              },
+              "children": null,
+              "props": {
+                "text": "About"
+              },
+              "style": {
+                "display": "flex",
+                "color": "green"
+              }
+            }
+          ],
+          "props": {},
+          "style": {
+            "height": 44,
+            "display": "flex",
+            "alignItems": "center",
+            "justifyContent": "space-between",
+            "paddingLeft": 8,
+            "paddingRight": 16
+          }
+        },
+        {
+          "id": "d84e3a46-3f3f-479e-9c9f-b6580440a1f9",
+          "name": "@LAYOUT/BOX",
+          "navigation": {
+            "to": null
+          },
+          "children": [
+            {
+              "id": "81feb204-e8b4-45a4-9c8a-14e044665951",
+              "name": "@LAYOUT/BOX",
+              "navigation": {
+                "to": null
+              },
+              "children": [
+                {
+                  "id": "2707b850-c907-45e8-892d-81d3891063e5",
+                  "name": "@UI/IMAGE",
+                  "navigation": {
+                    "to": null
+                  },
+                  "children": null,
+                  "props": {
+                    "source": null,
+                    "alt": "image",
+                    "src": "http://www.inf.puc-rio.br/wordpress/wp-content/uploads/2014/02/Ivan-Mathias-248x175.jpg"
+                  },
+                  "style": {
+                    "display": "flex",
+                    "height": 160,
+                    "width": 160
+                  }
+                }
+              ],
+              "props": {},
+              "style": {
+                "height": "auto",
+                "display": "flex",
+                "flexGrow": 1,
+                "justifyContent": "center",
+                "alignItems": "center"
+              }
+            },
+            {
+              "id": "470ed000-68c7-4c7e-8894-70f22f728e9b",
+              "name": "@LAYOUT/BOX",
+              "navigation": {
+                "to": null
+              },
+              "children": [
+                {
+                  "id": "8061d4f9-5555-4792-8ad2-e5925229d2da",
+                  "name": "@UI/IMAGE",
+                  "navigation": {
+                    "to": null
+                  },
+                  "children": null,
+                  "props": {
+                    "source": null,
+                    "alt": "image",
+                    "src": "http://www.inf.puc-rio.br/wordpress/wp-content/uploads/2014/02/Ivan-Mathias-248x175.jpg"
+                  },
+                  "style": {
+                    "height": 160,
+                    "width": 160
+                  }
+                }
+              ],
+              "props": {},
+              "style": {
+                "height": "auto",
+                "display": "flex",
+                "flexGrow": 1,
+                "justifyContent": "center",
+                "alignItems": "center"
+              }
+            },
+            {
+              "id": "604b72aa-4c89-478d-b915-b8ff00f70970",
+              "name": "@LAYOUT/BOX",
+              "navigation": {
+                "to": null
+              },
+              "children": [
+                {
+                  "id": "121ac214-baad-44e8-87a8-dc12856364c3",
+                  "name": "@UI/IMAGE",
+                  "navigation": {
+                    "to": null
+                  },
+                  "children": null,
+                  "props": {
+                    "source": null,
+                    "alt": "image",
+                    "src": "http://www.inf.puc-rio.br/wordpress/wp-content/uploads/2014/02/Ivan-Mathias-248x175.jpg"
+                  },
+                  "style": {
+                    "height": 160,
+                    "width": 160
+                  }
+                }
+              ],
+              "props": {},
+              "style": {
+                "height": "auto",
+                "display": "flex",
+                "flexGrow": 1,
+                "justifyContent": "center",
+                "alignItems": "center"
+              }
+            }
+          ],
+          "props": {},
+          "style": {
+            "height": 170,
+            "display": "flex",
+            "alignItems": "stretch",
+            "paddingLeft": 8,
+            "paddingTop": 8,
+            "paddingBottom": 8,
+            "paddingRight": 8
+          }
+        },
+        {
+          "id": "91e96b5f-d811-44d4-a2a2-26752db09f55",
+          "name": "@LAYOUT/BOX",
+          "navigation": {
+            "to": null
+          },
+          "children": [
+            {
+              "id": "08c1440c-37f9-4504-9439-b1a5f684177b",
+              "name": "@LAYOUT/BOX",
+              "navigation": {
+                "to": null
+              },
+              "children": [
+                {
+                  "id": "22a2b886-74df-4ab8-adec-598167fde4b2",
+                  "name": "@UI/TEXT",
+                  "navigation": {
+                    "to": null
+                  },
+                  "children": null,
+                  "props": {
+                    "text": "IVAN"
+                  },
+                  "style": {
+                    "display": "flex"
+                  }
+                }
+              ],
+              "props": {},
+              "style": {
+                "height": "auto",
+                "display": "flex",
+                "flexGrow": 1,
+                "justifyContent": "center",
+                "alignItems": "center"
+              }
+            },
+            {
+              "id": "01a5cb3a-bca4-4821-b145-65cc2eafbdc8",
+              "name": "@LAYOUT/BOX",
+              "navigation": {
+                "to": null
+              },
+              "children": [
+                {
+                  "id": "a3661cb1-cd13-4f02-afc6-234dc16be542",
+                  "name": "@UI/TEXT",
+                  "navigation": {
+                    "to": null
+                  },
+                  "children": null,
+                  "props": {
+                    "text": "IVAN"
+                  },
+                  "style": {
+                    "display": "flex"
+                  }
+                }
+              ],
+              "props": {},
+              "style": {
+                "height": "auto",
+                "display": "flex",
+                "flexGrow": 1,
+                "justifyContent": "center",
+                "alignItems": "center"
+              }
+            },
+            {
+              "id": "503bf8a1-582d-44a0-82db-742c790ada41",
+              "name": "@LAYOUT/BOX",
+              "navigation": {
+                "to": null
+              },
+              "children": [
+                {
+                  "id": "13bb9e98-b47a-4bf0-920a-ad717fba5ef5",
+                  "name": "@UI/TEXT",
+                  "navigation": {
+                    "to": null
+                  },
+                  "children": null,
+                  "props": {
+                    "text": "IVAN"
+                  },
+                  "style": {
+                    "display": "flex"
+                  }
+                }
+              ],
+              "props": {},
+              "style": {
+                "height": "auto",
+                "display": "flex",
+                "flexGrow": 1,
+                "justifyContent": "center",
+                "alignItems": "center"
+              }
+            }
+          ],
+          "props": {},
+          "style": {
+            "height": 20,
+            "display": "flex",
+            "alignItems": "stretch",
+            "paddingLeft": 8,
+            "paddingTop": 8,
+            "paddingBottom": 8,
+            "paddingRight": 8
+          }
+        }
+      ]
+    }
+  ]
+}
