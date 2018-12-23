@@ -1,14 +1,14 @@
 import React from 'react'
-import { View } from 'react-native'
+import { ScrollView } from 'react-native'
 
 {{#each components as |component|}}
 import {{component}} from '../components/{{component}}'
 {{/each}}
 
 const {{name}} = () => (
-  <View>
+  <ScrollView>
 {{{children}}}
-  </View>
+  </ScrollView>
 )
 
 export default {{name}}

@@ -1,0 +1,90 @@
+{
+  "name": "APP",
+  "version": "1.0.0",
+  "author": "hugo",
+  "slug": "hugo-app",
+  "description": "Hugo's app",
+  "createdAt": "2018-12-23T15:04:08.484Z",
+  "screens": [
+    {
+      "name": "Foo",
+      "children": [
+        {
+          "id": "e0f97afb-d221-46a2-9826-0f0fb0ea7a22",
+          "name": "@LAYOUT/BOX",
+          "navigation": {
+            "to": null
+          },
+          "children": [
+            {
+              "id": "4063ff36-7457-437d-9760-0bc6f79f03f6",
+              "name": "@UI/IMAGE",
+              "navigation": {
+                "to": null
+              },
+              "children": null,
+              "props": {
+                "source": null,
+                "alt": "image",
+                "src": "http://www.inf.puc-rio.br/wordpress/wp-content/uploads/2014/02/Ivan-Mathias-248x175.jpg"
+              },
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "width": 300,
+                "height": 200
+              }
+            },
+            {
+              "id": "9409c31a-6824-44b7-b000-4ed596f18d45",
+              "name": "@UI/IMAGE",
+              "navigation": {
+                "to": null
+              },
+              "children": null,
+              "props": {
+                "source": null,
+                "alt": "image",
+                "src": "http://www.inf.puc-rio.br/wordpress/wp-content/uploads/2014/02/Ivan-Mathias-248x175.jpg"
+              },
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "width": 300,
+                "height": 200
+              }
+            },
+            {
+              "id": "f0b4ddda-28b7-486d-b40a-e099505a608d",
+              "name": "@UI/IMAGE",
+              "navigation": {
+                "to": null
+              },
+              "children": null,
+              "props": {
+                "source": null,
+                "alt": "image",
+                "src": "http://www.inf.puc-rio.br/wordpress/wp-content/uploads/2014/02/Ivan-Mathias-248x175.jpg"
+              },
+              "style": {
+                "display": "flex",
+                "flexDirection": "column",
+                "width": 300,
+                "height": 200
+              }
+            }
+          ],
+          "props": {},
+          "style": {
+            "height": 1000,
+            "display": "flex",
+            "flexDirection": "column",
+            "justifyContent": "space-around",
+            "alignContent": "flex-start",
+            "alignItems": "center"
+          }
+        }
+      ]
+    }
+  ]
+}
