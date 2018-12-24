@@ -7,8 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "yarn tslint --project tsconfig.json --config tslint.json",
     "build": "tsc",
-    "clean": "rimraf dist output",
-    "start": "ts-node --files ."
+    "clean": "rimraf build output",
+    "start": "ts-node --files .",
+    "pkg": "pkg build/index.js --out-path dist"
   },
   "repository": {
     "type": "git",
@@ -35,8 +36,8 @@
   },
   "dependencies": {
     "@types/chalk": "^2.2.0",
-    "@types/handlebars": "^4.0.40",
     "@types/fs-extra": "^5.0.4",
+    "@types/handlebars": "^4.0.40",
     "@types/node": "^10.12.18",
     "@types/ramda": "^0.25.45",
     "@types/react-native": "^0.57.22",
@@ -46,6 +47,11 @@
     "decompress-targz": "^4.1.1",
     "fs-extra": "^7.0.1",
     "handlebars": "^4.0.12",
+    "pkg": "^4.3.5",
     "ramda": "^0.26.1"
+  },
+  "pkg": {
+    "scripts": "dist/**/*.js",
+    "assets": "assets/**/*"
   }
 }
