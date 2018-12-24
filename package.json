@@ -26,8 +26,6 @@
   },
   "homepage": "https://github.com/hugogrochau/app-generator#readme",
   "devDependencies": {
-    "@types/fs-extra": "^5.0.4",
-    "@types/node": "^10.12.18",
     "rimraf": "^2.6.2",
     "ts-jest": "^23.10.5",
     "ts-node": "^7.0.1",
@@ -38,8 +36,10 @@
   "dependencies": {
     "@types/chalk": "^2.2.0",
     "@types/handlebars": "^4.0.40",
+    "@types/fs-extra": "^5.0.4",
+    "@types/node": "^10.12.18",
     "@types/ramda": "^0.25.45",
-    "@types/react-native": "^0.57.20",
+    "@types/react-native": "^0.57.22",
     "chalk": "^2.4.1",
     "commander": "^2.19.0",
     "decompress": "^4.2.0",
