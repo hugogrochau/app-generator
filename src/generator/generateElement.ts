@@ -1,7 +1,8 @@
 import R from 'ramda'
+import { StyleSheet } from 'react-native'
 import { Element, ComponentName, ElementProps } from '../types'
 import { executeTemplate } from '../templates'
-import { StyleSheet } from 'react-native'
+import { sanitizeFileName } from '../sanitizeFileName'
 
 export const elementToComponentMap = {
   [ComponentName.layoutBox]: 'Box',
@@ -43,7 +44,7 @@ export const generateElement = (element: Element, depth: number): string => {
   const props = stringifyProps(receivedProps)
 
   if (name === ComponentName.uiButton && navigation && navigation.to) {
-    props.onPress = `() => { props.navigation.navigate('${navigation.to}') }`
+    props.onPress = `() => { props.navigation.navigate('${sanitizeFileName(navigation.to)}') }`
   }
 
   if (!children) {
