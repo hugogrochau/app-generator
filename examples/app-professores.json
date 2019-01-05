@@ -1,0 +1,330 @@
+{
+  "name": "Professores",
+  "version": "1.0.0",
+  "author": "hugogrochau",
+  "slug": "professores",
+  "description": "Professores da PUC",
+  "createdAt": "2019-01-05T17:38:05.727Z",
+  "screens": [
+    {
+      "name": "Indice",
+      "children": [
+        {
+          "id": "849af828-de97-46d4-a30d-85e6113a552d",
+          "name": "@LAYOUT/BOX",
+          "navigation": {
+            "to": null
+          },
+          "children": [
+            {
+              "id": "93012e1a-c042-4ea8-a2ff-e555ffb2d6f1",
+              "name": "@LAYOUT/BOX",
+              "navigation": {
+                "to": null
+              },
+              "children": [
+                {
+                  "id": "60e132f9-8722-41dc-88db-739b246ed739",
+                  "name": "@UI/TEXT",
+                  "navigation": {
+                    "to": null
+                  },
+                  "children": null,
+                  "props": {
+                    "text": "Buscar professor"
+                  },
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "fontWeight": "bold",
+                    "fontSize": 20
+                  }
+                },
+                {
+                  "id": "6ed3b904-f5d0-4bf4-873a-ddab2ac94efc",
+                  "name": "@UI/TEXT_INPUT",
+                  "navigation": {
+                    "to": null
+                  },
+                  "children": null,
+                  "props": {},
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "flexGrow": 1,
+                    "marginLeft": 20
+                  }
+                }
+              ],
+              "props": {},
+              "style": {
+                "height": "auto",
+                "display": "flex",
+                "flexDirection": "row",
+                "paddingLeft": 20,
+                "paddingTop": 20,
+                "paddingRight": 20,
+                "paddingBottom": 20,
+                "justifyContent": "space-between"
+              }
+            },
+            {
+              "id": "5eb00223-eca1-4f8c-960c-17eb8ffa6177",
+              "name": "@LAYOUT/BOX",
+              "navigation": {
+                "to": null
+              },
+              "children": [
+                {
+                  "id": "309ecc16-737b-40d3-856e-af73546d9354",
+                  "name": "@LAYOUT/BOX",
+                  "navigation": {
+                    "to": null
+                  },
+                  "children": [
+                    {
+                      "id": "602244b0-8435-48eb-bc53-a83011269e78",
+                      "name": "@UI/BUTTON",
+                      "navigation": {
+                        "to": "Luiz Fernando Bessa Seibel"
+                      },
+                      "children": null,
+                      "props": {
+                        "text": "Luiz Fernando Bessa Seibel - Professor Adjunto"
+                      },
+                      "style": {
+                        "display": "flex",
+                        "flexDirection": "column"
+                      }
+                    }
+                  ],
+                  "props": {},
+                  "style": {
+                    "height": "auto",
+                    "display": "flex",
+                    "flexDirection": "column"
+                  }
+                }
+              ],
+              "props": {},
+              "style": {
+                "height": "auto",
+                "display": "flex",
+                "flexDirection": "column",
+                "paddingLeft": 20,
+                "paddingTop": 20,
+                "paddingRight": 20,
+                "paddingBottom": 20
+              }
+            }
+          ],
+          "props": {},
+          "style": {
+            "height": "auto",
+            "display": "flex",
+            "flexDirection": "column",
+            "paddingBottom": 20,
+            "paddingRight": 20,
+            "paddingTop": 20,
+            "paddingLeft": 20
+          }
+        }
+      ]
+    },
+    {
+      "name": "Luiz Fernando Bessa Seibel",
+      "children": [
+        {
+          "id": "bf36bda0-0a29-4106-b682-88177d220c57",
+          "name": "@LAYOUT/BOX",
+          "navigation": {
+            "to": null
+          },
+          "children": [
+            {
+              "id": "0b38f68c-bf8d-4283-85e1-8311337a9473",
+              "name": "@LAYOUT/BOX",
+              "navigation": {
+                "to": null
+              },
+              "children": [
+                {
+                  "id": "6a4cbf11-79bb-4122-9682-9265464f618c",
+                  "name": "@UI/BUTTON",
+                  "navigation": {
+                    "to": "Indice"
+                  },
+                  "children": null,
+                  "props": {
+                    "text": "< Índice"
+                  },
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "marginRight": 20
+                  }
+                },
+                {
+                  "id": "0dd86753-df14-45ac-836d-c8a24524a91c",
+                  "name": "@UI/TEXT",
+                  "navigation": {
+                    "to": null
+                  },
+                  "children": null,
+                  "props": {
+                    "text": "Luiz Fernando Bessa Seibel"
+                  },
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "fontSize": 30,
+                    "fontWeight": "bold"
+                  }
+                }
+              ],
+              "props": {},
+              "style": {
+                "height": "auto",
+                "display": "flex",
+                "flexDirection": "row"
+              }
+            },
+            {
+              "id": "23e242f6-0e0a-4185-ba53-ba1a331bed14",
+              "name": "@LAYOUT/BOX",
+              "navigation": {
+                "to": null
+              },
+              "children": [
+                {
+                  "id": "862ca090-a9c0-49f5-8892-fe873785fc7d",
+                  "name": "@UI/IMAGE",
+                  "navigation": {
+                    "to": null
+                  },
+                  "children": null,
+                  "props": {
+                    "source": null,
+                    "alt": "image",
+                    "src": "http://139.82.24.35/seibel/hp/FIGURAS/Lfbs.jpg"
+                  },
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "width": 247,
+                    "height": 214,
+                    "flexGrow": 1
+                  }
+                },
+                {
+                  "id": "46aa758c-bffc-4f97-9073-b07ea2d46572",
+                  "name": "@UI/TEXT",
+                  "navigation": {
+                    "to": null
+                  },
+                  "children": null,
+                  "props": {
+                    "text": "\t Doutor em Ciência da Computação, na área de pesquisa de Banco de Dados e Bioinformática, pela PUC-Rio, em 2002.  Mestrado em Informática, com especialização em Banco de Dados, pelo Instituto Militar de Engenharia - IME-RJ, em 1985.  Engenheiro Eletricista, com especialização em Sistemas, pela Pontifícia Universidade Católica do Rio de Janeiro - PUC/RJ, em 1976. Professor do Departamento de Informática, PUC-Rio a partir de 1978.  Professor substituto do departamento de Informática Aplicada, Unirio de agosto de 2005 a julho de 2007."
+                  },
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "flexShrink": 1
+                  }
+                }
+              ],
+              "props": {},
+              "style": {
+                "height": "auto",
+                "display": "flex",
+                "flexDirection": "row",
+                "paddingLeft": 20,
+                "paddingTop": 20,
+                "paddingRight": 20,
+                "paddingBottom": 20
+              }
+            },
+            {
+              "id": "0a3adcc5-0bd9-4cb0-aa3b-b4b64320f28a",
+              "name": "@LAYOUT/BOX",
+              "navigation": {
+                "to": null
+              },
+              "children": [
+                {
+                  "id": "d04e8b62-a8cd-40fb-a4da-d147b527356d",
+                  "name": "@UI/TEXT",
+                  "navigation": {
+                    "to": null
+                  },
+                  "children": null,
+                  "props": {
+                    "text": "Deixar comentário"
+                  },
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "marginBottom": 20,
+                    "fontSize": 20,
+                    "fontWeight": "bold"
+                  }
+                },
+                {
+                  "id": "b9e83e4b-8270-45db-8b62-898b39d2e4e8",
+                  "name": "@UI/TEXT_AREA",
+                  "navigation": {
+                    "to": null
+                  },
+                  "children": null,
+                  "props": {},
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "height": 100
+                  }
+                },
+                {
+                  "id": "2a0b5f77-05e6-4c02-95d4-e81737cddfdf",
+                  "name": "@UI/BUTTON",
+                  "navigation": {
+                    "to": null
+                  },
+                  "children": null,
+                  "props": {
+                    "text": "Enviar",
+                    "title": "Deixar comentário"
+                  },
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "column"
+                  }
+                }
+              ],
+              "props": {},
+              "style": {
+                "height": "auto",
+                "display": "flex",
+                "flexDirection": "column",
+                "width": "auto",
+                "paddingLeft": 20,
+                "paddingTop": 20,
+                "paddingRight": 20,
+                "paddingBottom": 20
+              }
+            }
+          ],
+          "props": {},
+          "style": {
+            "height": "auto",
+            "display": "flex",
+            "flexDirection": "column",
+            "paddingLeft": 20,
+            "paddingTop": 20,
+            "paddingRight": 20,
+            "paddingBottom": 20
+          }
+        }
+      ]
+    }
+  ]
+}
