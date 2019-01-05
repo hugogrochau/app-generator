@@ -4,27 +4,27 @@
   "author": "hugogrochau",
   "slug": "professores",
   "description": "Professores da PUC",
-  "createdAt": "2019-01-05T17:38:05.727Z",
+  "createdAt": "2019-01-05T18:39:21.410Z",
   "screens": [
     {
       "name": "Indice",
       "children": [
         {
-          "id": "849af828-de97-46d4-a30d-85e6113a552d",
+          "id": "8fb920d5-eaf1-4a47-b6dd-adfe2b063fdc",
           "name": "@LAYOUT/BOX",
           "navigation": {
             "to": null
           },
           "children": [
             {
-              "id": "93012e1a-c042-4ea8-a2ff-e555ffb2d6f1",
+              "id": "3de5fe6f-d54e-475a-bb47-1782e6bf42c9",
               "name": "@LAYOUT/BOX",
               "navigation": {
                 "to": null
               },
               "children": [
                 {
-                  "id": "60e132f9-8722-41dc-88db-739b246ed739",
+                  "id": "eba07582-9586-4a47-8d50-7b4188462c2e",
                   "name": "@UI/TEXT",
                   "navigation": {
                     "to": null
@@ -41,7 +41,7 @@
                   }
                 },
                 {
-                  "id": "6ed3b904-f5d0-4bf4-873a-ddab2ac94efc",
+                  "id": "cb3f6c97-beed-4850-8181-b27e6920e279",
                   "name": "@UI/TEXT_INPUT",
                   "navigation": {
                     "to": null
@@ -69,24 +69,24 @@
               }
             },
             {
-              "id": "5eb00223-eca1-4f8c-960c-17eb8ffa6177",
+              "id": "33963b1c-dab9-4df4-adf5-cd60ba48f8dc",
               "name": "@LAYOUT/BOX",
               "navigation": {
                 "to": null
               },
               "children": [
                 {
-                  "id": "309ecc16-737b-40d3-856e-af73546d9354",
+                  "id": "6d4b6c10-6c05-483c-9dcd-48b4700f4a93",
                   "name": "@LAYOUT/BOX",
                   "navigation": {
                     "to": null
                   },
                   "children": [
                     {
-                      "id": "602244b0-8435-48eb-bc53-a83011269e78",
+                      "id": "6863f500-23c5-41b7-bef2-038f48c9029b",
                       "name": "@UI/BUTTON",
                       "navigation": {
-                        "to": "Luiz Fernando Bessa Seibel"
+                        "to": "Luiz Fernando Bessa Seibel\t"
                       },
                       "children": null,
                       "props": {
@@ -132,40 +132,24 @@
       ]
     },
     {
-      "name": "Luiz Fernando Bessa Seibel",
+      "name": "Luiz Fernando Bessa Seibel\t",
       "children": [
         {
-          "id": "bf36bda0-0a29-4106-b682-88177d220c57",
+          "id": "28e9900b-e0b3-4b7d-a469-138429c7143d",
           "name": "@LAYOUT/BOX",
           "navigation": {
             "to": null
           },
           "children": [
             {
-              "id": "0b38f68c-bf8d-4283-85e1-8311337a9473",
+              "id": "54175d19-68fe-41ad-88f7-24e68c3d83f5",
               "name": "@LAYOUT/BOX",
               "navigation": {
                 "to": null
               },
               "children": [
                 {
-                  "id": "6a4cbf11-79bb-4122-9682-9265464f618c",
-                  "name": "@UI/BUTTON",
-                  "navigation": {
-                    "to": "Indice"
-                  },
-                  "children": null,
-                  "props": {
-                    "text": "< Índice"
-                  },
-                  "style": {
-                    "display": "flex",
-                    "flexDirection": "column",
-                    "marginRight": 20
-                  }
-                },
-                {
-                  "id": "0dd86753-df14-45ac-836d-c8a24524a91c",
+                  "id": "1b586cac-638b-48cd-935b-6383592c9668",
                   "name": "@UI/TEXT",
                   "navigation": {
                     "to": null
@@ -190,14 +174,14 @@
               }
             },
             {
-              "id": "23e242f6-0e0a-4185-ba53-ba1a331bed14",
+              "id": "2568c77b-7417-4703-b393-a0d77691d62e",
               "name": "@LAYOUT/BOX",
               "navigation": {
                 "to": null
               },
               "children": [
                 {
-                  "id": "862ca090-a9c0-49f5-8892-fe873785fc7d",
+                  "id": "ff4b6dbe-0ddc-4eb1-93e6-dce1a9f0828e",
                   "name": "@UI/IMAGE",
                   "navigation": {
                     "to": null
@@ -213,11 +197,12 @@
                     "flexDirection": "column",
                     "width": 247,
                     "height": 214,
-                    "flexGrow": 1
+                    "flexGrow": 1,
+                    "marginBottom": 20
                   }
                 },
                 {
-                  "id": "46aa758c-bffc-4f97-9073-b07ea2d46572",
+                  "id": "7326e7ca-31f7-432c-89c6-2e849253485d",
                   "name": "@UI/TEXT",
                   "navigation": {
                     "to": null
@@ -237,22 +222,24 @@
               "style": {
                 "height": "auto",
                 "display": "flex",
-                "flexDirection": "row",
+                "flexDirection": "column",
                 "paddingLeft": 20,
                 "paddingTop": 20,
                 "paddingRight": 20,
-                "paddingBottom": 20
+                "paddingBottom": 20,
+                "justifyContent": "flex-start",
+                "alignItems": "center"
               }
             },
             {
-              "id": "0a3adcc5-0bd9-4cb0-aa3b-b4b64320f28a",
+              "id": "c08ef7ec-c063-4ae8-97fb-1eb6f22e8165",
               "name": "@LAYOUT/BOX",
               "navigation": {
                 "to": null
               },
               "children": [
                 {
-                  "id": "d04e8b62-a8cd-40fb-a4da-d147b527356d",
+                  "id": "25b2a3bf-c004-4041-8d87-9d9f702425b7",
                   "name": "@UI/TEXT",
                   "navigation": {
                     "to": null
@@ -270,7 +257,7 @@
                   }
                 },
                 {
-                  "id": "b9e83e4b-8270-45db-8b62-898b39d2e4e8",
+                  "id": "24dcb34c-9f3a-468d-be18-3ddbe8b1738d",
                   "name": "@UI/TEXT_AREA",
                   "navigation": {
                     "to": null
@@ -284,7 +271,7 @@
                   }
                 },
                 {
-                  "id": "2a0b5f77-05e6-4c02-95d4-e81737cddfdf",
+                  "id": "3d42f830-7088-46c9-8847-01570f143b6c",
                   "name": "@UI/BUTTON",
                   "navigation": {
                     "to": null
