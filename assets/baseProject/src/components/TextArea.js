@@ -1,8 +1,12 @@
 import React from 'react'
-import { TextArea as RNTextArea } from 'react-native'
+import { TextInput } from 'react-native'
 
 const TextArea = (props) => (
-  <RNTextArea {...props} />
+  <TextInput
+    multiline={true}
+    numberOfLines={4}
+    {...props}
+  />
 )
 
 export default TextArea
