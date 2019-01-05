@@ -43,8 +43,12 @@ export const generateElement = (element: Element, depth: number): string => {
   const style = stringifyStyle(receivedStyle)
   const props = stringifyProps(receivedProps)
 
-  if (name === ComponentName.uiButton && navigation && navigation.to) {
-    props.onPress = `() => { props.navigation.navigate('${sanitizeFileName(navigation.to)}') }`
+  if (name === ComponentName.uiButton) {
+    if (navigation && navigation.to) {
+      props.onPress = `() => { props.navigation.navigate('${sanitizeFileName(navigation.to)}') }`
+    } else {
+      props.onPress = 'f => f'
+    }
   }
 
   if (!children) {
