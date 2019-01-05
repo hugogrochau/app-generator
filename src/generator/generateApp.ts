@@ -3,6 +3,7 @@ import { AppDeclaration } from '../types'
 import { generateScreen } from './generateScreen'
 import { executeTemplate } from '../templates'
 import { write } from '../fileUtils'
+import { sanitizeFileName } from '../sanitizeFileName'
 
 export const generateApp = (appPath: string, appDeclaration: AppDeclaration) => {
   generateAppJson(appPath, appDeclaration)
@@ -10,7 +11,7 @@ export const generateApp = (appPath: string, appDeclaration: AppDeclaration) => 
 
   const screensPath = path.join(appPath, 'src', 'screens')
   appDeclaration.screens.forEach(screen => generateScreen(screensPath, screen))
-  const screenNames = appDeclaration.screens.map(s => s.name)
+  const screenNames = appDeclaration.screens.map(s => sanitizeFileName(s.name))
   generateNavigator(appPath, screenNames, appDeclaration.name)
 }
 

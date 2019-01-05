@@ -36,8 +36,10 @@
   },
   "dependencies": {
     "@types/chalk": "^2.2.0",
+    "@types/filenamify": "^2.0.1",
     "@types/fs-extra": "^5.0.4",
     "@types/handlebars": "^4.0.40",
+    "@types/humps": "^1.1.2",
     "@types/node": "^10.12.18",
     "@types/ramda": "^0.25.45",
     "@types/react-native": "^0.57.22",
@@ -45,8 +47,10 @@
     "commander": "^2.19.0",
     "decompress": "^4.2.0",
     "decompress-targz": "^4.1.1",
+    "filenamify": "^2.1.0",
     "fs-extra": "^7.0.1",
     "handlebars": "^4.0.12",
+    "humps": "^2.0.1",
     "pkg": "^4.3.5",
     "ramda": "^0.26.1"
   },
