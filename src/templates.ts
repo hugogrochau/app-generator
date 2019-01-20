@@ -5,7 +5,7 @@ import { read, getDirectoryFileNames } from './fileUtils'
 const templates: { [key: string]: handlebars.TemplateDelegate } = {}
 
 export const compileTemplates = () => {
-  const templatesPath = path.join('assets', 'templates')
+  const templatesPath = path.join(__dirname, '..', 'assets', 'templates')
   const templateFileNames = getDirectoryFileNames(templatesPath)
   templateFileNames.forEach(templateFileName => {
     const extensionIndex = templateFileName.indexOf('.hbs')

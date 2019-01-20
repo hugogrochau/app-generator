@@ -9,8 +9,9 @@
     "build": "tsc",
     "clean": "rimraf build output",
     "start": "ts-node --files .",
-    "pkg": "pkg build/index.js --out-path dist"
+    "pkg": "pkg . --out-path dist"
   },
+  "bin": "./build/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hugogrochau/app-generator.git"
@@ -55,7 +56,7 @@
     "ramda": "^0.26.1"
   },
   "pkg": {
-    "scripts": "dist/**/*.js",
+    "scripts": "build/**/*.js",
     "assets": "assets/**/*"
   }
 }

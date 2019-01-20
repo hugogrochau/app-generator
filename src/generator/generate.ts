@@ -10,7 +10,7 @@ export const generate = async (templatePath: string, outputDirectoryPath: string
 
   logger.info('Copying base project...')
   createDirectory(outputDirectoryPath, true)
-  copyDirectoryContent(path.join('assets', 'baseProject'), outputDirectoryPath)
+  copyDirectoryContent(path.join(__dirname, '..', '..', 'assets', 'baseProject'), outputDirectoryPath)
 
   logger.info('Extracting libraries...')
   await generateNodeModules(outputDirectoryPath)
