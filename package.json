@@ -50,7 +50,7 @@
     "decompress-targz": "^4.1.1",
     "filenamify": "^2.1.0",
     "fs-extra": "^7.0.1",
-    "handlebars": "^4.5.3",
+    "handlebars": "^4.7.7",
     "humps": "^2.0.1",
     "pkg": "^4.3.5",
     "ramda": "^0.26.1"
